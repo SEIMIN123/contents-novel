@@ -1,0 +1,57 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+@mixin flex ($d, $j, $a){
+
+  display: ($d);
+  justify-content: ($j);
+  align-items: ($a);
+  }
+  
+@mixin border {
+  border: 1px solid black;
+  }*{margin: 0; padding: 0; box-sizing: border-box;}
+
+  @mixin flex ($d, $j, $a){
+  
+    display: ($d);
+    justify-content: ($j);
+    align-items: ($a);
+    }
+    
+  @mixin border {
+    border: 1px solid black;
+    }
+  
+    #root {
+  
+      width: 100vw;
+      height: 100vh;
+      @include flex(flex,center,center);
+  
+      & > video {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      @include flex(flex,center,center);
+        
+      }
+  
+      .text {
+  
+        width: 100vw;
+        height: 100vh;
+        z-index: 999;
+        transition: 0.5s;
+        color: rgba(112, 110, 110,0.1);
+        font-family: 'Song Myung', serif;
+        @include flex(flex,center,center);
+      } 
+
+      .text:hover {
+        color: rgb(121, 0, 0);
+        background: url(../image/곤지암.gif);
+        background-size: cover;
+        font-size: 540px;
+      }
+    }

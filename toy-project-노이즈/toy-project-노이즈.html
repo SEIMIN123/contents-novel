@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/toy-project-노이즈.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div id="root">
+    <video src="../movie/TV-noise-turn_off.mp4" muted autoplay loop>
+    </video>
+    <div class="text"></div>
+    
+  </div>
+
+  <script>
+
+const content = "정말 없다고 생각해?"
+const text = document.querySelector('.text');
+
+let i = 0;
+
+function sleep(delay){
+const start = new Date().getTime();
+while (new Date().getTime() < start + delay);
+}
+
+function typing() {
+  
+  text.textContent += content[i++]
+  if( i > content.length){
+    text.textContent = ""
+    i = 0;
+    sleep(2000);
+  }
+  
+}
+setInterval(typing, 355);
+
+ 
+
+  </script>
+</body>
+</html>
