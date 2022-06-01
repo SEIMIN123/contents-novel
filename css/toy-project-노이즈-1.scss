@@ -21,6 +21,7 @@
   @mixin border {
     border: 1px solid black;
     }
+
   
     #root {
   
@@ -39,19 +40,21 @@
   
       .text {
   
-        width: 100vw;
-        height: 100vh;
+        width: 5vw;
+        height: 5vh;
         z-index: 999;
-        transition: 0.5s;
+        transition: 0.1s;
         color: rgba(112, 110, 110,0.1);
         font-family: 'Song Myung', serif;
         @include flex(flex,center,center);
       } 
-
+      
       .text:hover {
+        width: 100vw;
+        height: 100vh;
         color: rgb(121, 0, 0);
+        font-size: 540px;
         background: url(../image/곤지암.gif);
         background-size: cover;
-        font-size: 540px;
       }
     }
