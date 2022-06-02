@@ -32,7 +32,7 @@
 #root {
   width: 100vw;
   height: 100vh;
-  background-image: url(../image/jang.jpg);
+  background-image: url(../pic/jang.jpg);
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;

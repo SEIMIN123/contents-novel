@@ -8,7 +8,7 @@
 #root {
   width: 100vw;
   height: 100vh;
-  background: url(../image/moon.jpg);
+  background: url(../pic/moon.jpg);
   background-size: cover;
   border: 1px solid black;
 }

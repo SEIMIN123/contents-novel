@@ -8,7 +8,7 @@
 #root {
   width: 100vw;
   height: 100vh;
-  background-image: url(../image/123.jpg);
+  background-image: url(../pic/123.jpg);
   background-size: cover;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;

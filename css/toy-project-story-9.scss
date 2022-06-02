@@ -16,7 +16,8 @@
 
       width: 100vw;
       height: 100vh;
-      background: url(../image/sunset.jpg);
+      background: url(../pic/sunset.jpg);
+      background-size: cover;
       @include border;
 
       #text {
