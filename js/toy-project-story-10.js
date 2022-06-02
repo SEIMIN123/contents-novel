@@ -37,3 +37,9 @@ clickBtn1.addEventListener('click', () => {
           video1.style.display = "block";
         }
   });
+
+  const root = document.getElementById('root');
+  root.addEventListener('click', function () {
+    let page = '../toy-project-story-11.html';
+    location.href = page;
+  });

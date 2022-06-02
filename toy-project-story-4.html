@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,22 @@
   <title>Document</title>
   <link rel="stylesheet" href="../css/toy-project-story-4.css">
 </head>
+
 <body>
   <div id="root">
     <div id="text">가자</div>
   </div>
+  <audio src="./music/47.mp3" autoplay loop></audio>
 
-    </body>
-    
-    </html>
+  <script>
+    const text = document.getElementById('root');
+    text.addEventListener('click', function () {
+      let page = './toy-project-story-5.html';
+      location.href = page;
+    });
+  </script>
+
+
 </body>
+
 </html>

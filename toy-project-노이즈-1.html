@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
   <link rel="stylesheet" href="../css/toy-project-노이즈-1.css">
   <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
   <div id="root">
@@ -15,5 +17,16 @@
     </video>
     <div class="text">보여줄게</div>
   </div>
+
+  <audio src="./music/여-비명2.mp3" autoplay loop></audio>
+
+  <script>
+    const root = document.getElementById('root');
+    root.addEventListener('click', function () {
+      let page = './toy-project-main.html';
+      location.href = page;
+    });
+  </script>
 </body>
+
 </html>

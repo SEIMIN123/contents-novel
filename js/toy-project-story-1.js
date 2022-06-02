@@ -14,3 +14,8 @@ function typing() {
   
 }
 setInterval(typing, 35);
+
+text.addEventListener('click', function () {
+  let page = './toy-project-story-2.html';
+  location.href = page;
+});

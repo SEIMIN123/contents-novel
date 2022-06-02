@@ -45,8 +45,8 @@
 }
 
 #root .text {
-  width: 5vw;
-  height: 5vh;
+  width: 50vw;
+  height: 50vh;
   z-index: 999;
   -webkit-transition: 0.1s;
   transition: 0.1s;

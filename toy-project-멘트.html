@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +10,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
   <div id="root">
     <div>귀신을 믿어?</div>
   </div>
+  <audio src="./music/27.mp3" autoplay loop></audio>
+
+  <script>
+    const root = document.getElementById('root');
+    root.addEventListener('click', function(){
+      let page = './toy-project-멘트1.html';
+      location.href = page;
+    });
+  </script>
 </body>
+
 </html>
