@@ -32,7 +32,6 @@
 #root {
   width: 100vw;
   height: 100vh;
-  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
