@@ -39,6 +39,7 @@
     color: #000;
     font-family: 'Times New Roman', Times, serif;
     animation: cursor 0.5s ease infinite;
+    cursor: pointer;
     @include flex(flex, center, center);
   }
 }

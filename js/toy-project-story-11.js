@@ -15,6 +15,6 @@ const content ="세상은 아직 살만하다."
 
 
 text.addEventListener('click', function () {
-  let page = './toy-project-story-11.html';
+  let page = 'https://seimin123.github.io/portfolio/html/portfolio-8.html';
   location.href = page;
 });

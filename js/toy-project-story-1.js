@@ -11,7 +11,6 @@ function typing() {
   let txt = content.charAt(i);
   text.innerHTML += txt === "`"?"<br/>" : txt; i++;
   }
-  
 }
 setInterval(typing, 35);
 
