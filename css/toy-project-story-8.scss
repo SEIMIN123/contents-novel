@@ -14,13 +14,13 @@
     #root {
 
       width: 100vw;
-      height: 100vh;
-      background: url(../pic/moon.jpg);
-      background-size: cover;
+      height: 115vh;
+      background: url(../pic/moon-1.jpg);
+      background-size: contain;
 
       #text {
         width: 100vw;
-        height: 100vh;
+        height: 115vh;
         font-size: 30px;
         font-family: 'Times New Roman', Times, serif;
         color: rgb(255, 255, 255);

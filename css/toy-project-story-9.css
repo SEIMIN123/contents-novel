@@ -7,14 +7,14 @@
 
 #root {
   width: 100vw;
-  height: 100vh;
+  height: 130vh;
   background: url(../pic/sunset.jpg);
   background-size: cover;
 }
 
 #root #text {
   width: 100vw;
-  height: 100vh;
+  height: 130vh;
   font-size: 30px;
   font-family: 'Times New Roman', Times, serif;
   color: white;
