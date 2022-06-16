@@ -10,7 +10,6 @@
   height: 100vh;
   background: url(../pic/shaman-2.jpg);
   background-size: cover;
-  border: 1px solid black;
 }
 
 #root #text {
