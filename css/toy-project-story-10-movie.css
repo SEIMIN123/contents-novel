@@ -85,13 +85,29 @@
           align-items: center;
 }
 
-#root button {
+#root #btn1 {
   width: 200px;
   height: 50px;
   font-family: 'Times New Roman', Times, serif;
   font-size: 2rem;
-  border: none;
-  border-radius: 50px;
+  margin: 30px;
+  background-color: rgba(151, 144, 144, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root #btn2 {
+  width: 200px;
+  height: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2rem;
   margin: 30px;
   background-color: rgba(151, 144, 144, 0.5);
   display: -webkit-box;

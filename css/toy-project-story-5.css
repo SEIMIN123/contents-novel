@@ -7,14 +7,14 @@
 
 #root {
   width: 100vw;
-  height: 110vh;
+  height: 115vh;
   background: url(../pic/run-1.jpg);
   background-size: cover;
 }
 
 #root #text {
   width: 100vw;
-  height: 110vh;
+  height: 115vh;
   font-size: 30px;
   text-align: left;
   font-family: 'Times New Roman', Times, serif;
