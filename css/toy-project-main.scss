@@ -56,10 +56,8 @@
       font-weight: bold;
       font-family: 'Times New Roman', Times, serif;
       margin: 10px;
-
       animation: fadein 27s;
       animation-direction: alternate;
-      animation-iteration-count: infinite;
       @include flex(flex, center, center);
 
     }
