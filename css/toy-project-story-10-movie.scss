@@ -19,7 +19,7 @@
 
   width: 100vw;
   height: 100vh;
-  background-image: url(../pic/123.jpg);
+  background-image: url(../pic/BUDA.jpg);
   background-size: cover;
   flex-direction: column;
 
@@ -66,6 +66,7 @@
     height: 50px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 2rem;
+    font-weight: bold;
     margin: 30px;
     background-color: rgba(151, 144, 144, 0.5);
     @include flex(flex, center, center);
@@ -77,19 +78,11 @@
     height: 50px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 2rem;
+    font-weight: bold;
     margin: 30px;
     background-color: rgba(151, 144, 144, 0.5);
     @include flex(flex, center, center);
 
   }
-
-  button:hover {
-
-    cursor: pointer;
-    transition: 1s;
-    background-color: rgb(172, 172, 172);
-
-  }
-
 
 }
