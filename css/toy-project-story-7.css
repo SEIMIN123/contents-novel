@@ -7,14 +7,14 @@
 
 #root {
   width: 100vw;
-  height: 100vh;
+  height: 105vh;
   background: url(../pic/shaman-2.jpg);
   background-size: cover;
 }
 
 #root #text {
   width: 100vw;
-  height: 100vh;
+  height: 105vh;
   font-size: 30px;
   font-family: 'Times New Roman', Times, serif;
   color: white;
