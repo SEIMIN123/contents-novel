@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @-webkit-keyframes fadein {
@@ -29,63 +28,40 @@
     opacity: 1;
   }
 }
-
 #root {
   width: 100vw;
   height: 100vh;
   background-image: url(../pic/흑백.jpg);
   background-size: cover;
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  grid-template-columns: auto;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 #root > div {
   width: 100vw;
   height: 100vh;
-  color: #f3eaea;
+  color: rgb(243, 234, 234);
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 #root .box {
   font-size: 1.6vw;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
   text-orientation: upright;
   text-align: center;
   font-weight: bold;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   margin: 10px;
   -webkit-animation: fadein 27s;
           animation: fadein 27s;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
