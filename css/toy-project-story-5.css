@@ -4,20 +4,45 @@
   box-sizing: border-box;
 }
 
-#root {
-  width: 100vw;
-  height: 115vh;
-  background: url(../pic/run-1.jpg);
-  background-size: cover;
+@media (max-width: 1920px) {
+  #root {
+    width: 100vw;
+    height: 115vh;
+    background: url(../pic/run-1.jpg);
+    background-size: cover;
+  }
+  #root #text {
+    width: 100vw;
+    height: 115vh;
+    font-size: 30px;
+    text-align: left;
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
-#root #text {
-  width: 100vw;
-  height: 115vh;
-  font-size: 30px;
-  text-align: left;
-  font-family: "Times New Roman", Times, serif;
-  color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media (max-width: 800px) {
+  #root {
+    width: 110vw;
+    height: 115vh;
+    background: url(../pic/run-1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  #root #text {
+    width: 100vw;
+    height: 115vh;
+    font-size: 4vw;
+    text-align: left;
+    margin-left: 4vw;
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

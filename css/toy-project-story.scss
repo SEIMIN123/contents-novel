@@ -22,6 +22,19 @@
 
   }
 
+  @mixin mobile {
+    @media (max-width: 800px) {
+      @content;
+    }
+  }
+  
+  @mixin pc {
+    @media (max-width: 1920px) {
+      @content;
+    }
+  }
+
+@include pc {
   #root {
 
     width: 100vw;
@@ -56,21 +69,52 @@
     color: rgb(255, 255, 255);
     @include flex(flex,center,center);
   }
+}
+
+//-----------------------------------------------------
+
+@include mobile {
+  #root {
+
+    width: 100vw;
+    height: 110vh;
+    background-image: url(../pic/pic-1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    flex-direction: column;
+    @include flex(flex,center,center);
+
+  }
+
+  #text {
+    width: 100vw;
+    height: 100vh;
+    font-size: 4vw;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 5vw;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    @include flex(flex,center,center);
+  }
+
+  #text1 { 
+
+    width: 100vw;
+    height: 100vh;
+    font-size: 3.5vw;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 7vh;
+    animation: fadein 50s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    @include flex(flex,center,center);
+  }
+}
 
 
-  // if(text.innerHTML += txt === "\n") {
-  //   "<br/>" ;
-  // } else {
-  //   txt; i++;
-  // }
-  // }
-  
-  
-  // <!-- sleep(3000);
-  
-  
-  //  function sleep(delay) {
-  
-  //  const start = new Date().getTime();
-  //  while (new Date().getTime() < start + delay);
-  //  } -->

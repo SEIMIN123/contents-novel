@@ -4,26 +4,70 @@
   box-sizing: border-box;
 }
 
-#root {
-  width: 100vw;
-  height: 100vh;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@-webkit-keyframes smooth {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-#root > div {
-  width: 100vw;
-  height: 100vh;
-  color: #000;
-  transition: 3s;
-  font-size: 90px;
-  font-family: "Song Myung", serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+@keyframes smooth {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-#root > div:hover {
-  color: #fff;
-  font-size: 500%;
+@media (max-width: 1920px) {
+  #root {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #root > div {
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    -webkit-animation: smooth 5s;
+            animation: smooth 5s;
+    font-size: 500%;
+    font-family: "Song Myung", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 800px) {
+  #root {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #root > div {
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    -webkit-animation: smooth 5s;
+            animation: smooth 5s;
+    font-size: 11vw;
+    font-family: "Song Myung", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

@@ -4,23 +4,44 @@
   box-sizing: border-box;
 }
 
-#root {
-  width: 100%;
+@media (max-width: 1920px) {
+  #root {
+    width: 100vw;
+    height: 110vh;
+    background: url(../pic/rain1.jpg);
+  }
+  #root #text {
+    width: 100vw;
+    height: 110vh;
+    font-size: 30px;
+    text-align: left;
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
-
-#root {
-  width: 100vw;
-  height: 110vh;
-  background: url(../pic/rain1.jpg);
-}
-#root #text {
-  width: 100vw;
-  height: 110vh;
-  font-size: 30px;
-  text-align: left;
-  font-family: "Times New Roman", Times, serif;
-  color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media (max-width: 800px) {
+  #root {
+    width: 110vw;
+    height: 120vh;
+    background: url(../pic/rain1.jpg);
+    background-size: cover;
+    background-position: right right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  #root #text {
+    width: 100vw;
+    height: 120vh;
+    font-size: 4vw;
+    text-align: left;
+    margin-left: 4vw;
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

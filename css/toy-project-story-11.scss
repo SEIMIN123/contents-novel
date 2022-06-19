@@ -14,6 +14,19 @@
 @mixin border {
   border: 1px solid black;
 }
+
+@mixin mobile {
+  @media (max-width: 800px) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media (max-width: 1920px) {
+    @content;
+  }
+}
+
 @keyframes cursor {
   0% {
     border-right: 5px solid #fff
@@ -28,18 +41,38 @@
   }
 }
 
-#root {
+@include pc {
+  #root {
 
-  width: 100vw;
-  height: 100vh;
-  @include flex(flex, center, center);
-
-  #text {
-    font-size: 100px;
-    color: #000;
-    font-family: 'Times New Roman', Times, serif;
-    animation: cursor 0.5s ease infinite;
-    cursor: pointer;
+    width: 100vw;
+    height: 100vh;
     @include flex(flex, center, center);
+
+    #text {
+      font-size: 100px;
+      color: #000;
+      font-family: 'Times New Roman', Times, serif;
+      animation: cursor 0.5s ease infinite;
+      cursor: pointer;
+      @include flex(flex, center, center);
+    }
+  }
+}
+
+@include mobile {
+  #root {
+
+    width: 100vw;
+    height: 100vh;
+    @include flex(flex, center, center);
+
+    #text {
+      font-size: 9.5vw;
+      color: #000;
+      font-family: 'Times New Roman', Times, serif;
+      animation: cursor 0.5s ease infinite;
+      cursor: pointer;
+      @include flex(flex, center, center);
+    }
   }
 }

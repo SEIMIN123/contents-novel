@@ -30,6 +30,20 @@
 
   }
 }
+
+@mixin mobile {
+  @media (max-width: 800px) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media (max-width: 1920px) {
+    @content;
+  }
+}
+
+@include pc {
   #root {
 
     width: 100vw;
@@ -62,3 +76,44 @@
 
     }
   }
+}
+
+@include mobile {
+  #root {
+
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../pic/흑백.jpg);
+    background-size: cover;
+    grid-template-columns: auto;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    @include flex(flex, center, center);
+
+
+    &>div {
+      width: 100vw;
+      height: 100vh;
+      color: rgb(243, 234, 234);
+      backdrop-filter: blur(3px);
+      @include flex(flex, center, center);
+
+    }
+
+    .box {
+      margin-right: -5vw;
+      font-size: 5vw;
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      text-align: center;
+      font-weight: bold;
+      font-family: 'Times New Roman', Times, serif;
+      animation: fadein 27s;
+      animation-direction: alternate;
+      @include flex(flex, center, center);
+
+    }
+  }
+}

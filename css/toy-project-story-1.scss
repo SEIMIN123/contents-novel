@@ -1,74 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  *{margin: 0; padding: 0; box-sizing: border-box;}
-  
-  @mixin flex ($d, $j, $a){
-  
-    display: ($d);
-    justify-content: ($j);
-    align-items: ($a);
-    }
-    
-  @mixin border {
-    border: 1px solid black;
-    }
+@mixin flex ($d, $j, $a) {
+
+  display: ($d);
+  justify-content: ($j);
+  align-items: ($a);
+}
+
+@mixin border {
+  border: 1px solid black;
+}
+
+@mixin mobile {
+  @media (max-width: 800px) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media (max-width: 1920px) {
+    @content;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+@keyframes fadein1 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@include pc {
+  #root {
+
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../pic/jang.jpg);
+    background-size: cover;
+    @include flex(flex, center, center);
+
+  }
+
+
+  #text {
+    width: 50vw;
+    height: 100vh;
+    font-size: 30px;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    margin: 30px;
+    @include flex(flex, center, center);
+  }
+
+  #text1 {
+
+    width: 50vw;
+    height: 100vh;
+    font-size: 30px;
+    text-align: left;
+    animation: fadein 50s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    @include flex(flex, center, center);
+  }
+
+  #text1:hover {
+    animation-play-state: paused;
+
+  }
+}
+
+//----------------------------------------------------
+
+@include mobile {
 
   #root {
-    width: 100%;
+
+    width: 100vw;
+    height: 180vh;
+    background-image: url(../pic/jang.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    flex-direction: column;
+    @include flex(flex, center, center);
+
   }
-    @keyframes fadein {
-      0% {
-        opacity: 0;
-      }
 
-      50% {
-        opacity: 1;
-      }
+  #text {
+    width: 100vw;
+    height: 80vh;
+    margin: 10vw;
+    font-size: 4vw;
+    text-align: left;
+    margin-top: -12vh;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    @include flex(flex, center, center);
+  }
 
-      100% {
-        opacity: 0;
-      }
+  #text1 {
 
-    }
-  
-    #root {
-  
-      width: 100vw;
-      height: 100vh;
-      background-image: url(../pic/jang.jpg);
-      background-size: cover;
-      @include flex(flex,center,center);
-  
-    }
-    
-  
-    #text {
-      width: 50vw;
-      height: 100vh;
-      font-size: 30px;
-      text-align: left;
-      font-family: 'Times New Roman', Times, serif;
-      color: rgb(255, 255, 255);
-      margin: 30px;
-      @include flex(flex,center,center);
-    }
-  
-      #text1 { 
-    
-        width: 50vw;
-        height: 100vh;
-        font-size: 30px;
-        text-align: left;
-        animation: fadein 50s;
-        animation-direction: alternate;
-        animation-iteration-count: infinite;
-        font-family: 'Times New Roman', Times, serif;
-        color: rgb(255, 255, 255);
-        @include flex(flex,center,center);
-      }
+    width: 100vw;
+    height: 80vh;
+    font-size: 4vw;
+    text-align: left;
+    animation: fadein1 10s;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    @include flex(flex, center, center);
+  }
 
-      #text1:hover {
-        animation-play-state:paused;
-
-      }
-
-  
+}

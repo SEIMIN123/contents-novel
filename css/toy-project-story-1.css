@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-#root {
-  width: 100%;
-}
-
 @-webkit-keyframes fadein {
   0% {
     opacity: 0;
@@ -31,48 +27,115 @@
     opacity: 0;
   }
 }
-#root {
-  width: 100vw;
-  height: 100vh;
-  background-image: url(../pic/jang.jpg);
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@-webkit-keyframes fadein1 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
-#text {
-  width: 50vw;
-  height: 100vh;
-  font-size: 30px;
-  text-align: left;
-  font-family: "Times New Roman", Times, serif;
-  color: rgb(255, 255, 255);
-  margin: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@keyframes fadein1 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
+@media (max-width: 1920px) {
+  #root {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../pic/jang.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-#text1 {
-  width: 50vw;
-  height: 100vh;
-  font-size: 30px;
-  text-align: left;
-  -webkit-animation: fadein 50s;
-          animation: fadein 50s;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  font-family: "Times New Roman", Times, serif;
-  color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  #text {
+    width: 50vw;
+    height: 100vh;
+    font-size: 30px;
+    text-align: left;
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(255, 255, 255);
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #text1 {
+    width: 50vw;
+    height: 100vh;
+    font-size: 30px;
+    text-align: left;
+    -webkit-animation: fadein 50s;
+            animation: fadein 50s;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #text1:hover {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+  }
 }
+@media (max-width: 800px) {
+  #root {
+    width: 100vw;
+    height: 180vh;
+    background-image: url(../pic/jang.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-#text1:hover {
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  #text {
+    width: 100vw;
+    height: 80vh;
+    margin: 10vw;
+    font-size: 4vw;
+    text-align: left;
+    margin-top: -12vh;
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #text1 {
+    width: 100vw;
+    height: 80vh;
+    font-size: 4vw;
+    text-align: left;
+    -webkit-animation: fadein1 10s;
+            animation: fadein1 10s;
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

@@ -11,6 +11,19 @@
   border: 1px solid black;
   }
 
+  @mixin mobile {
+    @media (max-width: 800px) {
+      @content;
+    }
+  }
+  
+  @mixin pc {
+    @media (max-width: 1920px) {
+      @content;
+    }
+  }
+
+  @include pc {
     #root {
   
       width: 100vw;
@@ -46,3 +59,39 @@
         background-size: cover;
       }
     }
+  }
+
+  @include mobile {
+    #root {
+  
+      width: 100vw;
+      height: 100vh;
+      @include flex(flex,center,center);
+  
+      & > video {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      @include flex(flex,center,center);
+        
+      }
+  
+      .text {
+  
+        width: 100vw;
+        height: 100vh;
+        color: rgb(121, 0, 0);
+        font-family: 'Song Myung', serif;
+        background: url(../pic/곤지암.gif);
+        background-position: center center;
+        background-attachment: fixed;
+        background-repeat: no-repeat; 
+        background-size: contain;
+        font-size: 28vw;
+        z-index: 999;
+        transition: 0.3s;
+        @include flex(flex,center,center);
+      } 
+    }
+  }

@@ -4,69 +4,141 @@
   box-sizing: border-box;
 }
 
-#root {
-  width: 100vw;
-  height: 100vh;
-  background-image: url(../pic/BUDA.jpg);
-  background-size: cover;
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media (max-width: 1920px) {
+  #root {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../pic/BUDA.jpg);
+    background-size: cover;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #root #con {
+    width: 80vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #root #con1 {
+    width: 80vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #root .video {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #root .video1 {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #root #btn1 {
+    width: 200px;
+    height: 50px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 30px;
+    background-color: rgba(151, 144, 144, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #root #btn2 {
+    width: 200px;
+    height: 50px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 30px;
+    background-color: rgba(151, 144, 144, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
-#root #con {
-  width: 80vw;
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#root #con1 {
-  width: 80vw;
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#root .video {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#root .video1 {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#root #btn1 {
-  width: 200px;
-  height: 50px;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 30px;
-  background-color: rgba(151, 144, 144, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#root #btn2 {
-  width: 200px;
-  height: 50px;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 30px;
-  background-color: rgba(151, 144, 144, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media (max-width: 800px) {
+  #root {
+    width: 150vw;
+    height: 170vh;
+    background-image: url(../pic/BUDA.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #root #con {
+    width: 80vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #root #con1 {
+    width: 80vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #root .video {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #root .video1 {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #root #btn1 {
+    width: 30vw;
+    height: 7vh;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 30px;
+    background-color: rgba(151, 144, 144, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #root #btn2 {
+    width: 40vw;
+    height: 7vh;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 30px;
+    background-color: rgba(151, 144, 144, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

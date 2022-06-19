@@ -27,21 +27,43 @@
     border-right: 5px solid #fff;
   }
 }
-#root {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media (max-width: 1920px) {
+  #root {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #root #text {
+    font-size: 100px;
+    color: #000;
+    font-family: "Times New Roman", Times, serif;
+    -webkit-animation: cursor 0.5s ease infinite;
+            animation: cursor 0.5s ease infinite;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
-#root #text {
-  font-size: 100px;
-  color: #000;
-  font-family: "Times New Roman", Times, serif;
-  -webkit-animation: cursor 0.5s ease infinite;
-          animation: cursor 0.5s ease infinite;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media (max-width: 800px) {
+  #root {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #root #text {
+    font-size: 9.5vw;
+    color: #000;
+    font-family: "Times New Roman", Times, serif;
+    -webkit-animation: cursor 0.5s ease infinite;
+            animation: cursor 0.5s ease infinite;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

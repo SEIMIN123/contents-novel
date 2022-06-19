@@ -1,30 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-*{margin: 0; padding: 0; box-sizing: border-box;}
-
-@mixin flex ($d, $j, $a){
+@mixin flex ($d, $j, $a) {
 
   display: ($d);
   justify-content: ($j);
   align-items: ($a);
+}
+
+@mixin border {
+  border: 1px solid black;
+}
+
+@mixin mobile {
+  @media (max-width: 800px) {
+    @content;
   }
+}
 
- @mixin border {
-    border: 1px solid black;
-    }
+@mixin pc {
+  @media (max-width: 1920px) {
+    @content;
+  }
+}
 
-    #root {
+@include pc {
+  #root {
 
+    width: 100vw;
+    height: 130vh;
+    background: url(../pic/sunset.jpg);
+    background-size: cover;
+
+    #text {
       width: 100vw;
       height: 130vh;
-      background: url(../pic/sunset.jpg);
-      background-size: cover;
-
-      #text {
-        width: 100vw;
-        height: 130vh;
-        font-size: 30px;
-        font-family: 'Times New Roman', Times, serif;
-        color: rgb(255, 255, 255);
-        @include flex(flex,center,center);
-      }
+      font-size: 30px;
+      font-family: 'Times New Roman', Times, serif;
+      color: rgb(255, 255, 255);
+      @include flex(flex, center, center);
     }
+  }
+}
+
+@include mobile {
+  #root {
+
+    width: 110vw;
+    height: 130vh;
+    background: url(../pic/sunset.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    #text {
+      width: 100vw;
+      height: 130vh;
+      font-size: 3.5vw;
+      margin-left: 2vh;
+      text-align: center;
+      font-weight: bold;
+      font-family: 'Times New Roman', Times, serif;
+      color: rgb(255, 255, 255);
+      @include flex(flex, center, center);
+    }
+  }
+}
