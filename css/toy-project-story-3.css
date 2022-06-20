@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @media (max-width: 1920px) {
@@ -15,13 +16,20 @@
     height: 100vh;
     font-size: 30px;
     text-align: left;
-    font-family: "Times New Roman", Times, serif;
-    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
+
 @media (max-width: 800px) {
   #root {
     width: 110vw;
@@ -31,7 +39,10 @@
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #root #text {
     width: 100vw;
@@ -39,10 +50,16 @@
     font-size: 4vw;
     text-align: left;
     margin-left: 4vw;
-    font-family: "Times New Roman", Times, serif;
-    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
