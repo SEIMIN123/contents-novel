@@ -50,8 +50,8 @@
 @include mobile {
   #root {
 
-    width: 110vw;
-    height: 115vh;
+    width: 100vw;
+    height: 100vh;
     background: url(../pic/run-1.jpg);
     background-size: cover;
     background-position: center center;
@@ -60,10 +60,10 @@
 
     #text {
       width: 100vw;
-      height: 115vh;
+      height: 100vh;
       font-size: 4vw;
       text-align: left;
-      margin-left: 4vw;
+      font-weight: bold;
       font-family: 'Times New Roman', Times, serif;
       color: rgb(255, 255, 255);
       @include flex(flex, center, center);

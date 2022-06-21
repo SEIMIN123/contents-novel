@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @-webkit-keyframes fadein {
@@ -22,40 +21,29 @@
     opacity: 1;
   }
 }
-
 @media (max-width: 1920px) {
   #root {
     width: 100vw;
     height: 110vh;
     background-image: url(../pic/pic-1.jpg);
     background-size: cover;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
+
   #text {
     width: 50vw;
     height: 100vh;
     font-size: 30px;
     text-align: left;
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(255, 255, 255);
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
+
   #text1 {
     width: 50vw;
     height: 100vh;
@@ -67,43 +55,28 @@
             animation-direction: alternate;
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(255, 255, 255);
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
 }
-
 @media (max-width: 800px) {
   #root {
     width: 100vw;
-    height: 110vh;
+    height: 105vh;
     background-image: url(../pic/pic-1.jpg);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    flex-direction: column;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
+
   #text {
     width: 100vw;
     height: 100vh;
@@ -111,41 +84,26 @@
     text-align: left;
     font-weight: bold;
     margin-top: 5vw;
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(255, 255, 255);
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
+
   #text1 {
     width: 100vw;
     height: 100vh;
-    font-size: 3.5vw;
-    text-align: left;
+    font-size: 4vw;
+    text-align: center;
     font-weight: bold;
-    margin-bottom: 7vh;
     -webkit-animation: fadein 50s;
             animation: fadein 50s;
     -webkit-animation-direction: alternate;
             animation-direction: alternate;
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(255, 255, 255);
   }
 }

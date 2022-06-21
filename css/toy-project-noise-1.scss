@@ -90,7 +90,6 @@
         background-size: contain;
         font-size: 28vw;
         z-index: 999;
-        transition: 0.3s;
         @include flex(flex,center,center);
       } 
     }

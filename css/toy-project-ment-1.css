@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @-webkit-keyframes smooth {
@@ -28,21 +27,14 @@
     opacity: 1;
   }
 }
-
 @media (max-width: 1920px) {
   #root {
     width: 100vw;
     height: 100vh;
     background-color: black;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #root > div {
     width: 100vw;
@@ -51,33 +43,20 @@
     -webkit-animation: smooth 4s;
             animation: smooth 4s;
     font-size: 500%;
-    font-family: 'Song Myung', serif;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    font-family: "Song Myung", serif;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
 }
-
 @media (max-width: 800px) {
   #root {
     width: 100vw;
     height: 100vh;
     background-color: black;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #root > div {
     width: 100vw;
@@ -86,15 +65,9 @@
     -webkit-animation: smooth 5s;
             animation: smooth 5s;
     font-size: 11vw;
-    font-family: 'Song Myung', serif;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    font-family: "Song Myung", serif;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
 }

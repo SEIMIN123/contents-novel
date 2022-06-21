@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @media (max-width: 1920px) {
@@ -16,20 +15,13 @@
     height: 110vh;
     font-size: 30px;
     text-align: left;
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(255, 255, 255);
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
 }
-
 @media (max-width: 800px) {
   #root {
     width: 110vw;
@@ -46,16 +38,11 @@
     font-size: 4vw;
     text-align: left;
     margin-left: 4vw;
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(255, 255, 255);
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
 }

@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @media (max-width: 1920px) {
@@ -16,24 +15,17 @@
     width: 100vw;
     height: 130vh;
     font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(255, 255, 255);
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
 }
-
 @media (max-width: 800px) {
   #root {
-    width: 110vw;
-    height: 130vh;
+    width: 100vw;
+    height: 110vh;
     background: url(../pic/sunset.jpg);
     background-size: cover;
     background-position: center center;
@@ -42,21 +34,14 @@
   }
   #root #text {
     width: 100vw;
-    height: 130vh;
+    height: 110vh;
     font-size: 3.5vw;
-    margin-left: 2vh;
-    text-align: center;
+    text-align: left;
     font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(255, 255, 255);
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
 }

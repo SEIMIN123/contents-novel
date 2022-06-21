@@ -55,7 +55,7 @@
     background-size: cover;
     background-position: right right;
     background-attachment: fixed;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
 
     #text {
       width: 100vw;
@@ -63,6 +63,7 @@
       font-size: 4vw;
       text-align: left;
       margin-left: 4vw;
+      font-weight: bold;
       font-family: 'Times New Roman', Times, serif;
       color: rgb(255, 255, 255);
       @include flex(flex, center, center);

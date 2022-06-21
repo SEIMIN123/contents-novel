@@ -251,13 +251,13 @@
     }
 
     #btn2 {
-      width: 40vw;
+      width: 50vw;
       height: 7vh;
       font-family: 'Times New Roman', Times, serif;
       font-size: 2rem;
       font-weight: bold;
       flex-direction: column;
-      margin-bottom: -67vh;
+      margin-bottom: -60vh;
       background-color: rgba(151, 144, 144, 0.5);
       @include flex(flex, center, center);
     }

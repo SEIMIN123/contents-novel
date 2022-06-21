@@ -50,8 +50,8 @@
 @include mobile {
   #root {
 
-    width: 110vw;
-    height: 115vh;
+    width: 100vw;
+    height: 105vh;
     background: url(../pic/moon-1.jpg);
     background-size: cover;
     background-position: center right;
@@ -60,9 +60,8 @@
 
     #text {
       width: 100vw;
-      height: 115vh;
+      height: 105vh;
       font-size: 4vw;
-      margin-left: 5vw;
       font-weight: bold;
       font-family: 'Times New Roman', Times, serif;
       color: rgb(255, 255, 255);

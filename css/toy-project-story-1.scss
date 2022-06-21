@@ -107,7 +107,7 @@
   #root {
 
     width: 100vw;
-    height: 180vh;
+    height: 170vh;
     background-image: url(../pic/jang.jpg);
     background-size: cover;
     background-position: center center;
@@ -123,6 +123,7 @@
     height: 80vh;
     margin: 10vw;
     font-size: 4vw;
+    font-weight: bold;
     text-align: left;
     margin-top: -12vh;
     font-family: 'Times New Roman', Times, serif;
@@ -133,9 +134,10 @@
   #text1 {
 
     width: 100vw;
-    height: 80vh;
+    height: 75vh;
     font-size: 4vw;
     text-align: left;
+    font-weight: bold;
     animation: fadein1 10s;
     font-family: 'Times New Roman', Times, serif;
     color: rgb(255, 255, 255);
