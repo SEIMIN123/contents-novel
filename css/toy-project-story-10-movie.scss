@@ -34,54 +34,96 @@
     height: 100vh;
     background-image: url(../pic/BUDA.jpg);
     background-size: cover;
-    flex-direction: column;
-
     @include flex(flex, center, center);
 
     #con {
 
-      width: 80vw;
+      width: 40vw;
       height: 50vh;
+      flex-direction: column;
       @include flex(flex, center, center);
 
     }
 
     #con1 {
 
-      width: 80vw;
+      width: 40vw;
       height: 50vh;
+      flex-direction: column;
       @include flex(flex, center, center);
 
     }
 
-    .video {
+    #next {
 
-      width: 100%;
-      max-width: 500px;
-      height: auto;
-      position: relative;
+      width: 10vw;
+      height: 6vh;
+      font-size: 1.5vw;
+      font-family: 'Times New Roman', Times, serif;
+      color: rgba(221, 221, 221, 0.8);
+      border-radius: 30px;
+      border: 0;
+      background-color: rgba(221, 221, 221, 0.5);
+      box-shadow: 0 5px rgba(148, 142, 142, 0.5);
+      margin-bottom: -75vh;
+      cursor: pointer;
       @include flex(flex, center, center);
 
     }
 
-    .video1 {
+    #next:hover {
+
+      background-color: rgba(221, 221, 221, 0.5);
+    }
+
+    #next:active {
+
+      color: rgb(255, 255, 255);
+      transition: 0.2s;
+      box-shadow: 0 5px rgba(100, 100, 100, 0.5);
+      transform: translateY(2px);
+    }
+
+    #video {
+
+      width: 40vw;
+      height: 50vh;
+      position: absolute;
+      overflow: hidden;
+      @include flex(flex, center, center);
+    }
+
+    #back {
 
       width: 100%;
-      max-width: 500px;
       height: auto;
-      position: relative;
-      @include flex(flex, center, center);
+    }
 
+    #video1 {
+
+      width: 40vw;
+      height: 50vh;
+      position: absolute;
+      overflow: hidden;
+      @include flex(flex, center, center);
+    }
+
+    #back1 {
+
+      width: 100%;
+      height: auto;
     }
 
     #btn1 {
+
       width: 200px;
       height: 50px;
       font-family: 'Times New Roman', Times, serif;
       font-size: 2rem;
       font-weight: bold;
-      margin: 30px;
-      background-color: rgba(151, 144, 144, 0.5);
+      margin: 3vh;
+      margin-top: -60vh;
+      background-color: rgba(255, 255, 255, 0.5);
       @include flex(flex, center, center);
 
     }
@@ -92,8 +134,9 @@
       font-family: 'Times New Roman', Times, serif;
       font-size: 2rem;
       font-weight: bold;
-      margin: 30px;
-      background-color: rgba(151, 144, 144, 0.5);
+      margin: 3vh;
+      margin-top: -60vh;
+      background-color: rgba(255, 255, 255, 0.5);
       @include flex(flex, center, center);
 
     }
@@ -103,50 +146,96 @@
 @include mobile {
   #root {
 
-    width: 150vw;
-    height: 170vh;
+    width: 100vw;
+    height: 120vh;
     background-image: url(../pic/BUDA.jpg);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-
+    flex-direction: column;
     @include flex(flex, center, center);
 
     #con {
 
-      width: 80vw;
-      height: 50vh;
+      width: 100vw;
+      height: 100vh;
+      flex-direction: column;
+      margin-top: -30vh;
+      margin:5vh;
       @include flex(flex, center, center);
 
     }
 
     #con1 {
 
+      width: 100vw;
+      height: 100vh;
+      margin: 5vh;
+      flex-direction: column;
+
+      @include flex(flex, center, center);
+    }
+
+    #next {
+
+      width: 30vw;
+      height: 6vh;
+      font-size: 5vw;
+      font-family: 'Times New Roman', Times, serif;
+      color: rgba(221, 221, 221, 0.8);
+      border-radius: 30px;
+      border: 0;
+      background-color: rgba(221, 221, 221, 0.5);
+      box-shadow: 0 5px rgba(148, 142, 142, 0.5);
+      flex-direction: column;
+      margin-bottom: -105vh;
+      position: relative;
+      cursor: pointer;
+      @include flex(flex, center, center);
+
+    }
+
+    #next:hover {
+
+      background-color: rgba(221, 221, 221, 0.5);
+    }
+
+    #next:active {
+
+      color: rgb(255, 255, 255);
+      transition: 0.2s;
+      box-shadow: 0 5px rgba(100, 100, 100, 0.5);
+      transform: translateY(2px);
+    }
+
+    #video {
+
       width: 80vw;
-      height: 50vh;
+      margin-top: -20vh;
+      flex-direction: column;
+      @include flex(flex, center, center);
+    }
+
+    #back {
+
+      width: 100%;
+      height: auto;
+    }
+
+    #video1 {
+
+      width: 80vw;
+      margin-bottom: -35vh;
+
       @include flex(flex, center, center);
 
     }
 
-    .video {
+    #back1 {
 
       width: 100%;
-      max-width: 500px;
       height: auto;
-      position: relative;
-      @include flex(flex, center, center);
-
-    }
-
-    .video1 {
-
-      width: 100%;
-      max-width: 500px;
-      height: auto;
-      position: relative;
-      @include flex(flex, center, center);
-
     }
 
     #btn1 {
@@ -155,22 +244,23 @@
       font-family: 'Times New Roman', Times, serif;
       font-size: 2rem;
       font-weight: bold;
-      margin: 30px;
+      flex-direction: column;
       background-color: rgba(151, 144, 144, 0.5);
       @include flex(flex, center, center);
 
     }
 
     #btn2 {
-      width: 50vw;
+      width: 40vw;
       height: 7vh;
       font-family: 'Times New Roman', Times, serif;
       font-size: 2rem;
       font-weight: bold;
-      margin: 30px;
+      flex-direction: column;
+      margin-bottom: -67vh;
       background-color: rgba(151, 144, 144, 0.5);
       @include flex(flex, center, center);
-
     }
+
   }
 }

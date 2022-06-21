@@ -38,8 +38,8 @@ clickBtn1.addEventListener('click', () => {
         }
   });
 
-  const root = document.getElementById('root');
-  root.addEventListener('click', function () {
+  const next = document.getElementById('next');
+  next.addEventListener('click', function () {
     let page = './toy-project-story-11.html';
     location.href = page;
   });

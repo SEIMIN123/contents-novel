@@ -48,8 +48,8 @@
     width: 100vw;
     height: 100vh;
     color: #fff;
-    -webkit-animation: smooth 5s;
-            animation: smooth 5s;
+    -webkit-animation: smooth 4s;
+            animation: smooth 4s;
     font-size: 500%;
     font-family: 'Song Myung', serif;
     display: -webkit-box;
