@@ -77,11 +77,11 @@
   #root {
 
     width: 100vw;
-    height: 105vh;
+    height: 110vh;
     background-image: url(../pic/pic-1.jpg);
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
+    background-attachment: inherit;
     background-repeat: no-repeat; 
     flex-direction: column;
     @include flex(flex,center,center);
@@ -110,6 +110,8 @@
     animation: fadein 30s;
     font-family: 'Times New Roman', Times, serif;
     color: rgb(255, 255, 255);
+    @include flex(flex,center,center);
+
   }
 }
 
