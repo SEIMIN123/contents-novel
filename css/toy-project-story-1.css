@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @-webkit-keyframes fadein {
@@ -27,6 +28,7 @@
     opacity: 0;
   }
 }
+
 @-webkit-keyframes fadein1 {
   0% {
     opacity: 0;
@@ -38,6 +40,7 @@
     opacity: 1;
   }
 }
+
 @keyframes fadein1 {
   0% {
     opacity: 0;
@@ -49,30 +52,41 @@
     opacity: 1;
   }
 }
+
 @media (max-width: 1920px) {
   #root {
     width: 100vw;
     height: 100vh;
     background-image: url(../pic/jang.jpg);
     background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   #text {
     width: 50vw;
     height: 100vh;
     font-size: 30px;
     text-align: left;
-    font-family: "Times New Roman", Times, serif;
-    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
     margin: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   #text1 {
     width: 50vw;
     height: 100vh;
@@ -84,18 +98,24 @@
             animation-direction: alternate;
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
-    font-family: "Times New Roman", Times, serif;
-    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   #text1:hover {
     -webkit-animation-play-state: paused;
             animation-play-state: paused;
   }
 }
+
 @media (max-width: 800px) {
   #root {
     width: 100vw;
@@ -105,12 +125,20 @@
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   #text {
     width: 100vw;
     height: 80vh;
@@ -119,13 +147,18 @@
     font-weight: bold;
     text-align: left;
     margin-top: -12vh;
-    font-family: "Times New Roman", Times, serif;
-    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   #text1 {
     width: 100vw;
     height: 75vh;
@@ -134,10 +167,16 @@
     font-weight: bold;
     -webkit-animation: fadein1 10s;
             animation: fadein1 10s;
-    font-family: "Times New Roman", Times, serif;
-    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }

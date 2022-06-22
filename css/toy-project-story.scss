@@ -105,11 +105,10 @@
     width: 100vw;
     height: 100vh;
     font-size: 4vw;
-    text-align: center;
+    margin-top: -9vh;
+    text-align: left;
     font-weight: bold;
-    animation: fadein 50s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
+    animation: fadein 30s;
     font-family: 'Times New Roman', Times, serif;
     color: rgb(255, 255, 255);
   }
