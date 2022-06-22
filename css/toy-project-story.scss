@@ -94,10 +94,10 @@
     font-size: 4vw;
     text-align: left;
     font-weight: bold;
-    margin-top: 5vw;
+    margin: 4vh;
     font-family: 'Times New Roman', Times, serif;
     color: rgb(255, 255, 255);
-    @include flex(flex,center,center);
+    @include flex(flex,flex-start,flex-start);
   }
 
   #text1 { 
@@ -110,8 +110,7 @@
     animation: fadein 30s;
     font-family: 'Times New Roman', Times, serif;
     color: rgb(255, 255, 255);
-    @include flex(flex,center,center);
-
+    @include flex(flex,flex-start,flex-start);
   }
 }
 
