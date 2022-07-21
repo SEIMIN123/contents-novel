@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body::-webkit-scrollbar {
@@ -13,28 +12,24 @@ body::-webkit-scrollbar {
 @media (max-width: 1920px) {
   #root {
     width: 100vw;
-    height: 110vh;
+    height: 120vh;
     background: url(../pic/rain1.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   #root #text {
     width: 100vw;
     height: 110vh;
     font-size: 30px;
     text-align: left;
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(255, 255, 255);
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
 }
-
 @media (max-width: 800px) {
   #root {
     width: 100vw;
@@ -51,16 +46,10 @@ body::-webkit-scrollbar {
     font-size: 4vw;
     text-align: left;
     font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(255, 255, 255);
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
 }

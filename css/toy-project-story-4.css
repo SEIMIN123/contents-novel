@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @-webkit-keyframes fade {
@@ -22,7 +21,6 @@
     opacity: 1;
   }
 }
-
 @media (max-width: 1920px) {
   #root {
     width: 100vw;
@@ -33,25 +31,17 @@
     width: 100vw;
     height: 100vh;
     font-size: 1%;
-    -webkit-transition: 10s;
     transition: 10s;
-    font-family: 'Times New Roman', Times, serif;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    font-family: "Times New Roman", Times, serif;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #root #text:hover {
     color: rgba(255, 255, 255, 0.3);
     font-size: 250px;
   }
 }
-
 @media (max-width: 800px) {
   #root {
     width: 100vw;
@@ -65,15 +55,9 @@
     -webkit-animation: fade 7s;
             animation: fade 7s;
     color: rgba(255, 255, 255, 0.3);
-    font-family: 'Times New Roman', Times, serif;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    font-family: "Times New Roman", Times, serif;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
 }

@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @media (max-width: 1920px) {
@@ -11,99 +10,59 @@
     height: 100vh;
     background-image: url(../pic/BUDA.jpg);
     background-size: cover;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #root #con {
     width: 40vw;
     height: 50vh;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    flex-direction: column;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #root #con1 {
     width: 40vw;
     height: 50vh;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    flex-direction: column;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #root #next {
     width: 10vw;
     height: 6vh;
     font-size: 1.5vw;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
     color: rgba(221, 221, 221, 0.8);
     border-radius: 30px;
     border: 0;
     background-color: rgba(221, 221, 221, 0.5);
-    -webkit-box-shadow: 0 5px rgba(148, 142, 142, 0.5);
-            box-shadow: 0 5px rgba(148, 142, 142, 0.5);
+    box-shadow: 0 5px rgba(148, 142, 142, 0.5);
     margin-bottom: -75vh;
     cursor: pointer;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #root #next:hover {
     background-color: rgba(221, 221, 221, 0.5);
   }
   #root #next:active {
-    color: white;
-    -webkit-transition: 0.2s;
+    color: rgb(255, 255, 255);
     transition: 0.2s;
-    -webkit-box-shadow: 0 5px rgba(100, 100, 100, 0.5);
-            box-shadow: 0 5px rgba(100, 100, 100, 0.5);
-    -webkit-transform: translateY(2px);
-            transform: translateY(2px);
+    box-shadow: 0 5px rgba(100, 100, 100, 0.5);
+    transform: translateY(2px);
   }
   #root #video {
     width: 40vw;
     height: 50vh;
     position: absolute;
     overflow: hidden;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #root #back {
     width: 100%;
@@ -114,15 +73,9 @@
     height: 50vh;
     position: absolute;
     overflow: hidden;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #root #back1 {
     width: 100%;
@@ -131,43 +84,30 @@
   #root #btn1 {
     width: 200px;
     height: 50px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
     font-size: 2rem;
     font-weight: bold;
     margin: 3vh;
     margin-top: -60vh;
     background-color: rgba(255, 255, 255, 0.5);
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #root #btn2 {
     width: 200px;
     height: 50px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
     font-size: 2rem;
     font-weight: bold;
     margin: 3vh;
     margin-top: -60vh;
     background-color: rgba(255, 255, 255, 0.5);
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
 }
-
 @media (max-width: 800px) {
   #root {
     width: 100vw;
@@ -177,113 +117,64 @@
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    flex-direction: column;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #root #con {
     width: 100vw;
     height: 100vh;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin-top: -30vh;
     margin: 5vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #root #con1 {
     width: 100vw;
     height: 100vh;
     margin: 5vh;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    flex-direction: column;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #root #next {
     width: 30vw;
     height: 6vh;
     font-size: 5vw;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
     color: rgba(221, 221, 221, 0.8);
     border-radius: 30px;
     border: 0;
     background-color: rgba(221, 221, 221, 0.5);
-    -webkit-box-shadow: 0 5px rgba(148, 142, 142, 0.5);
-            box-shadow: 0 5px rgba(148, 142, 142, 0.5);
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    box-shadow: 0 5px rgba(148, 142, 142, 0.5);
+    flex-direction: column;
     margin-bottom: -105vh;
     position: relative;
     cursor: pointer;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #root #next:hover {
     background-color: rgba(221, 221, 221, 0.5);
   }
   #root #next:active {
-    color: white;
-    -webkit-transition: 0.2s;
+    color: rgb(255, 255, 255);
     transition: 0.2s;
-    -webkit-box-shadow: 0 5px rgba(100, 100, 100, 0.5);
-            box-shadow: 0 5px rgba(100, 100, 100, 0.5);
-    -webkit-transform: translateY(2px);
-            transform: translateY(2px);
+    box-shadow: 0 5px rgba(100, 100, 100, 0.5);
+    transform: translateY(2px);
   }
   #root #video {
     width: 80vw;
     margin-top: -20vh;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    flex-direction: column;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #root #back {
     width: 100%;
@@ -292,15 +183,9 @@
   #root #video1 {
     width: 80vw;
     margin-bottom: -35vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #root #back1 {
     width: 100%;
@@ -309,44 +194,26 @@
   #root #btn1 {
     width: 30vw;
     height: 7vh;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
     font-size: 2rem;
     font-weight: bold;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     background-color: rgba(151, 144, 144, 0.5);
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #root #btn2 {
     width: 50vw;
     height: 7vh;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
     font-size: 2rem;
     font-weight: bold;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin-bottom: -60vh;
     background-color: rgba(151, 144, 144, 0.5);
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
 }

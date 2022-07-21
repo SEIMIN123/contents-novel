@@ -38,8 +38,9 @@ body::-webkit-scrollbar {
   #root {
 
     width: 100vw;
-    height: 110vh;
+    height: 120vh;
     background: url(../pic/rain1.jpg);
+    @include flex(flex, center, center);
 
     #text {
       width: 100vw;

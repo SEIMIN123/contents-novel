@@ -37,13 +37,13 @@ body::-webkit-scrollbar {
   #root {
 
     width: 100vw;
-    height: 115vh;
+    height: 100vh;
     background: url(../pic/run-1.jpg);
     background-size: cover;
-
+    @include flex(flex, center, center);
     #text {
       width: 100vw;
-      height: 115vh;
+      height: 100vh;
       font-size: 30px;
       text-align: left;
       font-family: 'Times New Roman', Times, serif;
