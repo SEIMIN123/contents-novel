@@ -27,34 +27,34 @@
   }
 }
 
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
+// @keyframes fadein {
+//   0% {
+//     opacity: 0;
+//   }
 
-  50% {
-    opacity: 1;
-  }
+//   50% {
+//     opacity: 1;
+//   }
 
-  100% {
-    opacity: 0;
-  }
-}
+//   100% {
+//     opacity: 0;
+//   }
+// }
 
 
-@keyframes fadein1 {
-  0% {
-    opacity: 0;
-  }
+// @keyframes fadein1 {
+//   0% {
+//     opacity: 0;
+//   }
 
-  50% {
-    opacity: 0;
-  }
+//   50% {
+//     opacity: 0;
+//   }
 
-  100% {
-    opacity: 1;
-  }
-}
+//   100% {
+//     opacity: 1;
+//   }
+// }
 
 
 @include pc {
@@ -107,7 +107,7 @@
   #root {
 
     width: 100vw;
-    height: 170vh;
+    height: 150vh;
     background-image: url(../pic/jang.jpg);
     background-size: cover;
     background-position: center center;
@@ -120,31 +120,31 @@
 
   #text {
     width: 100vw;
-    height: 80vh;
-    margin: 10vw;
+    height: 50vh;
     font-size: 4vw;
     font-weight: bold;
-    margin-top: -5vh;
     text-align: left;
+    margin-top: -90vh;
+    position: absolute;
     font-family: 'Times New Roman', Times, serif;
     color: rgb(255, 255, 255);
-    @include flex(flex,flex-start,flex-start);
+    @include flex(flex, flex-start, flex-start);
 
   }
 
   #text1 {
 
     width: 100vw;
-    height: 80vh;
+    height: 50vh;
     font-size: 4vw;
     text-align: left;
     font-weight: bold;
-    margin-top: -5vh;
+    margin-bottom: -55vh;
+    position: absolute;
     animation: fadein1 10s;
     font-family: 'Times New Roman', Times, serif;
     color: rgb(255, 255, 255);
-    @include flex(flex,flex-start,center);
-
+    @include flex(flex, center, center);
   }
 
 }
